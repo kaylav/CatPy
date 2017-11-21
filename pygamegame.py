@@ -45,6 +45,8 @@ class PygameGame(object):
 
     def isKeyPressed(self, key):
         ''' return whether a specific key is being held '''
+        if (self._keys.get(key, False)) != False:
+            print(str(self._keys.get(key, False)))
         return self._keys.get(key, False)
 
     def __init__(self, width=600, height=400, fps=50, title="112 Pygame Game"):
@@ -52,7 +54,7 @@ class PygameGame(object):
         self.height = height
         self.fps = fps
         self.title = title
-        self.bgColor = (255, 255, 255)
+        self.bgColor = (255, 0, 255)
         pygame.init()
 
     def run(self):
