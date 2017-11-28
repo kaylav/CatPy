@@ -54,7 +54,9 @@ class PygameGame(object):
         self.height = height
         self.fps = fps
         self.title = title
-        self.bgColor = (0, 0, 255)
+        self.bgColor = (206, 231, 242)
+        pygame.font.init() # you have to call this at the start,
+                           # if you want to use this module.
         pygame.init()
 
     def run(self):

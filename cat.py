@@ -6,7 +6,7 @@ import pygame
 import math
 from GameObject import GameObject
 
-class Cat(object):
+class Cat(gameObject):
     @staticmethod
     def init():
         pass
@@ -19,7 +19,7 @@ class Cat(object):
         self.sleepy = 5
         self.timeAlive = 0 #amount of time the game has been running
 
-    def update(self, dt, keysDown, screenWidth, screenHeight):
+    def update(self, dt, keysDown, xPos, yPos):
         self.timeAlive += dt
 
         if keysDown(pygame.K_LEFT):
@@ -42,4 +42,4 @@ class Cat(object):
     #def walk(x, y)
 
     #def enter(x, y)
-        #this is to enter a game mode or look at an animation 
+        #this is to enter a game mode or look at an animation
