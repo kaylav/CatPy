@@ -1,0 +1,78 @@
+timesheet.txt
+
+Kayla Vokt (kgv)
+15-112 Section H
+---------------------------------------------------------------------
+
+Monday, November 20, 2017: 
+	*Worked on Project Proposal, Competitive Analysis, and Storyboard 
+	5:00pm - 6:30pm, 9:00pm - 11:00pm 
+	Total 3.5 hours 
+Tuesday, November 21, 2017:
+	*Preliminary Code
+	8:30-9:00am, incorporating PyGame Framework, set up GitHub
+	9:15am - 12:15pm, creating individual files and objects for game
+	Total 3.5 hours 
+Saturday, November 25, 2017:
+	*Worked on organizing pygame 
+	10:00-11:00am 
+	Total 1 hour
+Sunday, November 26, 2017:
+	*Work on homepage in pygame 
+	9:00am-11:00am
+	*Pygame navigation, drawing on screen
+	8:00pm-10:00pm
+	Total 4 hours
+Monday, November 27, 2017:
+	*Creating classes in pygame
+	3:30pm-5:30pm
+	Total 2 hours 
+Tuesday, November 28, 2017:
+	*Mouse motion and mouse pressed in pygame
+	4:00pm-5:15pm
+	*Switch to tkinter, creates modes and screens
+	9:30pm - 12:00am 
+	Total 3.75 hours
+Wednesday, November 29, 2017:
+	*Create mini games in tkinter
+	9:20am-12:20pm
+	Total 3 hours
+Thursday, November 30, 2017:
+	*Planning AI Decision Tree and Features on paper
+	1:00pm-2:30pm
+	Total 1.5 hours
+Saturday, December 2, 2017:
+	*Game over screens and images, fix mini games
+	1:00pm-3:00pm
+	*mousePressMove function and catMoveAI
+	6:00pm-7:30pm 
+	Total 3.5 hours
+Sunday, December 3, 2017:
+	*continue working on adding cat movement functions
+	2:30pm-4:00pm 
+	* debugging
+	10:00pm - 11:30pm
+Monday, December 4, 2017:
+	*Adding directions and dx, dy
+	11:00am-12:30pm
+	*debugging, adding cat AI
+	11:00pm-12:30am
+	Total 3 hours
+Tuesday, December 5, 2017:
+	*perfect cat AI and movement
+	3:00pm-7:30pm
+	Total 4.5 hours
+Wednesday, December 6, 2017:
+	*Implement gifs and animations
+	9:00am-12:00pm
+	*debug mini games and add design
+	5:00pm-8:00pm
+	Total 6 hours
+Thursday, December 7, 2017:
+	*final designing and making video
+	9:00am-3:00pm 
+	Total 6 hours 
+	 
+
+
+	

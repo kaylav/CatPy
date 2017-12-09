@@ -1,0 +1,70 @@
+proposal.txt
+
+Kayla Vokt (kgv)
+15-112 Section H
+November 21, 2017
+TP1 Proposal
+---------------------------------------------------------------------
+
+Include a complete and thorough project proposal (in the file proposal.txt, or .doc, or .pdf), clearly defining the problem you intend to solve, a fairly detailed description of how you intend to solve it, how you will break this problem down into several different tasks, and an algorithmic plan for the trickiest part of the project. Your proposal must also list all modules and technologies you plan to use outside of Tkinter.
+
+---------------------------------------------------------------------
+
+*CatPy*
+
+I plan to create a virtual cat game called CatPy. This will be an interactive game where you can play as a cat and move around and interact with a virtual world. 
+
+
+Virtual World
+
+The virtual world portion of this game will be made through PyGame. It will consist of two spaces: a backyard space and a indoor house space. Split among these two spaces will be different special items that the player (the “cat”) can interact with. 
+In the backyard, there will be a food/water bowl which when activated leads to a feeding game in which the player has to catch dropping fish in a bowl at the bottom of screen. Also in the backyard, there will be a grooming station, which leads to another mini game in which you brush and pet the cat and this increases the happiness level of the cat. Additionally, there will be a garden, a pond, a climbable tree, and a dog house. Some of these additional items will lead to new pages where you can see animations of fish in the pond, for example. Others of these items will not be intractable but they will be present in order to make the game animations appealing. The whole backyard will be bordered with a fence. On one end of the backyard, there will be a door which leads inside. 
+Inside, is the indoor house space. In this space, there will be a toy box/play room where you can choose once of two mini games: either a laser pointer game or a mouse chasing game, both where the cursor is a cat paw and you want to catch the item. These games increase cat happiness levels. Also, indoors is the cat bed where if activated, it will lead to another catnap video game where you act as a cow bouncing on sheep and clouds to reach the moon. This will decrease cat sleepiness level. Other items in the indoor space will be a couch and TV and a kitchen and dining table. This will be there for animation quality. 
+
+The Cat
+
+The cat player will be a Class in PyGame. It will include descriptive variables such as hunger, happiness, and sleepiness level. One of my main goals for this project is to make the cat options to be real life cats that are available for adoption from local animal shelters. Ideally, I would use web-scraping to get data from a humane society/animal shelter listings of cats up for adoption. I would like to incorporate image processing or machine learning somehow so that my project can analyze the photos of the cats that it got and convert them into digital versions of the cats. This would be something ideal to strive for once I have the basics of my game functioning. Another function I would strive to add is the Google Maps API in order for a player to type in any city and be given the cats up for adoption from the nearest animal shelters. This will most likely be some of the future work outside the scope of the term project. 
+
+Game Set Up
+
+I will use PyGame to create the different spaces and mini games within my project. I will create unique drawings to use them as the sprites and animations necessary for my game.
+In order to create this project, I will start with creating the different classes, methods, and modes necessary for the different pages I will be featuring. The game starts with a welcome page. On this page there will be a “Play” button, and once the user presses this, they are directed to a settings page where they are prompted to select the cat they want to adopt (play as). This would be the step where I incorporate the web scraping of animal shelter websites, digital versions of the cats up for adoption would ideally be displayed. After selecting the cat, this cat (also known as the player) will be dropped into the backyard. The user can use the arrow keys in order to move around the backyard. If the player moves over one of the special objects in the space, it will highlight and the player must press the space key to activate this game. The game will include another splash screen with an introduction and instructions on how to play. Depending on how the player does in the game, the cat’s hunger, happiness, or sleepiness level will change. Throughout the entire game, the cat’s levels will be displayed on the screen in the form of a progress bar. Once you have taken sufficient care of one a cat, you will get notified that you can now adopt another cat. On the home screen, the backyard or indoor spaces, a settings button will also be present at all times. When the player presses this, they will be led to the same screen with all the available cats up for adoption. If all your cats are at full happiness, then you can adopt another one and these will be added to your Adopted Cat list. From this settings screen, you can press on one of the cats to learn more about them and their personality (this data will be from the animal shelter website).          
+
+Challenges     
+
+Some of the challenges I anticipate running into will be deciding how I want the cat hunger, happiness, and sleepiness levels to change over time and in relation to success on the mini games. Currently, my plan is that sleepiness will slowly decrease over time that the game is running and it can only be change by playing the cat nap mini game. Depending on the user’s success in this game, the Tired level will decrease so the cat has more energy to play. Happiness will be increased through grooming, playing, and napping. Hunger will slowly decrease over time and can only be fixed by playing the feeding game. Obviously my biggest challenge will be learning how to incorporate web scraping with image process to convert this into useful information for me to use in my game. Something that I would also like to make my game be able to do is be played online. Ideally, I would have my game connected to an online database so users can play using the same account from any device. If I cannot achieve this through online databases, I will attempt to use text files as my databases. 
+ 
+
+Plan of Action
+
+My first plan of action is to create the skeleton of my PyGame code. I will create all the pages that I need for my project and connect them through special keywords using the modes template. 
+
+Pages:
+Home
+Select First Cat
+Backyard
+-Grooming Game
+-Feeding Game
+-Garden
+-Pond Animation
+-Tree
+-Dog House
+Indoors
+-Nap Game
+-Laser
+-Mouse
+Settings
+About Me
+
+Update 1
+
+I changed my project design to be make using tkinter instead of pygame. I ran into difficulties making pygame function with my code. I am using the same general idea for the game, but this time it is implemented through tkinter. A modification for the current version of my game is that it only have one backyard setting. I am using the modes demo from the 112 website and I included the mouse moved event functionality. Images are coming from images labeled for reuse from Google.   
+
+Update 2 (12/7/17)
+
+I continued my plan of using tinter for the functionality of my code. I learned how to make use of gif images with various indices. I still have two screens, a backyard and an inside mode, but I added the option to select what color cat you want to be in the settings option. I also incorporated decision trees by making the cat move on its own. Where the cat moves is on based on how hungry or sleepy the cat is and the player has the option to tell the cat where to go but the cat will ultimately decide where it wants to move on its own. The three mini games I used are a feeding game, a grooming game, and a cat nap game.  
+
+
+
+
+ 
