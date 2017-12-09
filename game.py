@@ -228,7 +228,7 @@ def getImage(data, filename):
 def loadImage(data, filename):
     data.gameImages = dict()
     #code to look through files and make set of all image names 
-    filenames = {"images/tree.gif","images/food.gif","images/brush.gif","images/bed.gif", "images/fish.gif", "images/bowl.gif", "images/petcat.gif","images/fence.gif", "images/sheep.gif", "images/door.gif","images/fish3.gif","images/fish2.gif", "images/sprites/cats2-1.gif","images/sprites/cats2-2.gif","images/sprites/cats2-3.gif", "images/stars.gif", "images/cornercat.gif", "images/paws.gif", "images/pinkpaws.gif","images/settings.gif", "images/settings1.gif", "images/paw.gif","images/home.gif", "images/sprites/cats1-2.gif", "images/sprites/cats2-2.gif","images/sprites/cats3-2.gif","images/sprites/cats4-2.gif","images/sprites/cats1-4.gif","images/sprites/cats2-4.gif","images/sprites/cats3-4.gif","images/sprites/cats4-4.gif", "images/sprites/orange-down.gif", "images/sprites/orange-up.gif", "images/sprites/orange-left.gif", "images/sprites/orange-right.gif", "images/sprites/white-down.gif", "images/sprites/white-up.gif", "images/sprites/white-left.gif", "images/sprites/white-right.gif", "images/sprites/brown-down.gif", "images/sprites/brown-up.gif", "images/sprites/brown-left.gif", "images/sprites/brown-right.gif", "images/sprites/black-down.gif", "images/sprites/black-up.gif", "images/sprites/black-right.gif", "images/sprites/black-left.gif", "images/border.gif", "images/lick.gif", "images/sparkle.gif", "images/sushi.gif", "images/ramen.gif", "images/scales.gif","images/yawn.gif", "images/moon.gif", "images/doghouse.gif", "images/pond.gif", "images/byfence.gif", "images/byfence1.gif","images/succ.gif","images/window.gif", "images/chest.gif", "images/rug.gif"} #images labeled for reuse from google.com 
+    filenames = {"images/tree.gif","images/food.gif","images/brush.gif","images/bed.gif", "images/fish.gif", "images/bowl.gif", "images/petcat.gif","images/fence.gif", "images/sheep.gif", "images/door.gif","images/fish3.gif","images/fish2.gif", "images/sprites/cats2-1.gif","images/sprites/cats2-2.gif","images/sprites/cats2-3.gif", "images/stars.gif", "images/cornercat.gif", "images/paws.gif", "images/pinkpaws.gif","images/settings.gif", "images/settings1.gif", "images/paw.gif","images/home.gif", "images/sprites/cats1-2.gif", "images/sprites/cats2-2.gif","images/sprites/cats3-2.gif","images/sprites/cats4-2.gif","images/sprites/cats1-4.gif","images/sprites/cats2-4.gif","images/sprites/cats3-4.gif","images/sprites/cats4-4.gif", "images/sprites/orange-down.gif", "images/sprites/orange-up.gif", "images/sprites/orange-left.gif", "images/sprites/orange-right.gif", "images/sprites/white-down.gif", "images/sprites/white-up.gif", "images/sprites/white-left.gif", "images/sprites/white-right.gif", "images/sprites/brown-down.gif", "images/sprites/brown-up.gif", "images/sprites/brown-left.gif", "images/sprites/brown-right.gif", "images/sprites/black-down.gif", "images/sprites/black-up.gif", "images/sprites/black-right.gif", "images/sprites/black-left.gif", "images/border.gif", "images/lick.gif", "images/sparkle.gif", "images/sushi.gif", "images/ramen.gif", "images/scales.gif","images/yawn.gif", "images/moon.gif", "images/doghouse.gif", "images/pond.gif", "images/byfence.gif","images/succ.gif","images/window.gif", "images/chest.gif", "images/rug.gif"} #images labeled for reuse from google.com 
     
     for filename in filenames:
         data.gameImages[filename] = PhotoImage(file=filename)
@@ -644,7 +644,6 @@ def getSlope(data):
         return (5*dirX,5*dirY)
     else:
         data.catDir = "up"
-        #print("no movement!!!")
         return (0,0)
     
     return (5*dirX,5*dirY)
@@ -748,13 +747,11 @@ def mousePressMove(event, data):
         data.catX2 = random.randint(x2-radius, x2+radius)
         data.catY2 = random.randint(x2-radius, x2+radius)
     elif radius == 200: #move in opposite direction
-        #print("opposite")
         data.catX2 = abs(data.width - x2)
         data.catY2 = abs(data.height - y2)
     elif radius == 250: #shake left and right wont listen to player
         #animate
         data.catDir = "up"
-        print("unhappy, wont move, no!")
         
     #make sure it doesnt go off screen 
     if data.catX2 > data.width:
